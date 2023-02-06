@@ -2,7 +2,7 @@
   "name": "desafio_fullstack_back",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/pb-node-equipe-15/gaming-partner.git",
+  "repository": "https://github.com/Galvs135/desafio_fullstack_back",
   "author": "Lucas Galvao <lg_franca@hotmail.com>",
   "license": "MIT",
   "scripts": {
