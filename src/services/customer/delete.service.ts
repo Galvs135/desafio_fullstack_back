@@ -11,11 +11,7 @@ const deleteCostumerService = async (id: string): Promise<void> => {
     throw new AppError("Costumer not found", 404);
   }
 
-  if (costumer.isActive === false) {
-    throw new AppError("costumer inactive", 401);
-  }
-
-  await costumersRepository.update({ id }, { isActive: false });
+  await costumersRepository.delete({ id });
 };
 
 export default deleteCostumerService;

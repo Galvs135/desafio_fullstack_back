@@ -10,7 +10,7 @@ import AppError from "../../errors/AppError";
 const createSessionService = async ({
   name,
   email,
-}: IUserLogin): Promise<string> => {
+}: IUserLogin): Promise<any> => {
   const userRepository = AppDataSource.getRepository(Users);
   const user = await userRepository.findOneBy({ email: email });
 

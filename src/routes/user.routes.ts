@@ -6,7 +6,6 @@ import {
   searchUserController,
   updateUserController,
 } from "../controllers/users.controller";
-import adminMiddleware from "../middlewares/admin.midleware";
 import { authMiddleware } from "../middlewares/auth.midleware";
 
 const userRouter = Router();

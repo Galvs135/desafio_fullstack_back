@@ -8,11 +8,12 @@ import userRouter from "./routes/user.routes";
 import customersRouter from "./routes/costumers.routes";
 
 const app = express();
+const cors = require("cors");
 app.use(express.json());
-
+app.use(cors());
 app.use("/register", userRouter);
 app.use("/customer", customersRouter);
-app.use("/report", sessionRouter);
+app.use("/login", sessionRouter);
 
 app.use(handleErrorMiddleware);
 
